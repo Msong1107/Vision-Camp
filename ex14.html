@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <script>
+        var text = "문서 로딩 중일때 readystate =" + document.readyState + "\n";
+    </script>
+</head>
+
+<body style="background-color: yellow; color: blue;direction: rtl" onload="printProperties()">
+
+    <h3>document의 중 프로퍼티</h3>
+    <hr>
+    <a href="http://www.naver.com">네이버 홈페이지</a>
+    <div>이곳은 div 영역입니다.</div>
+    <input type="text" value="여기 포커스가 있습니다.">
+
+    <script>
+        function printProperties() {
+            document.getElementById("idput")
+
+            text += "1 location =" + document.location + "\n";
+            text += "2 URL =" + document.URL + "\n";
+            text += "3 title =" + document.title + "\n";
+            text += "4 head의 id =" + document.head.id + "\n";
+            text += "5 body color =" + document.body.style.color + "\n";
+            text += "6 domain =" + document.domain + "\n";
+            text += "7 lastModified =" + document.lastModified + "\n";
+            text += "8 defaultView =" + document.defaultView + "\n";
+            text += "9 문서의 로드 완료 후 =" + document.readyState + "\n";
+            text += "10 referrer =" + document.referrer + "\n";
+            text += "11 activeElement =" + document.activeElement + "\n";
+            text += "12 documentElement 태그 이름 =" + document.documentElement + "\n";
+
+
+        }
+    </script>
+
+
+</body>
+
+</html>
